@@ -1,6 +1,10 @@
 package model;
 
 public class BatchResponse {
+	
+	public BatchResponse() {
+		
+	}
 
     public int batchId;
     public String batchName;
