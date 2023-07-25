@@ -24,9 +24,9 @@ Feature: Batch module API testing
   @tag2
   Scenario Outline: Check if user able to create a Batch with missing values
     Given User creates POST Request for the LMS API endpoint
-    When User sends HTTPS Request and  request Body with missing fields from "<Sheetname>" and "<batchName>" and "<batchDesc>" and "<batchStatus>" and "<batchNoOfClass>" and "<programId>"
+    When User sends HTTPS Request and  request Body with missing fields from "<Sheetname>" and "<batchNamePrefix>" and "<batchDesc>" and "<batchStatus>" and "<batchNoOfClass>" and "<programId>"
     Then Verify batches API returns 400 status code and with batch missing fields error
 
     Examples: 
-      | Sheetname | batchName | batchDesc        | batchStatus | batchNoOfClass   | programId |
-      | Batch     | BatchName | BatchDescription | BatchStatus | BatchNoOfClasses | ProgramID |
+      | Sheetname | batchNamePrefix | batchDesc        | batchStatus | batchNoOfClass   | programId |
+      | Batch     | BatchNamePrefix | BatchDescription | BatchStatus | BatchNoOfClasses | ProgramID |

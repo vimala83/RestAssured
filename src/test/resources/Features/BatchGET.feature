@@ -31,7 +31,7 @@ Feature: Batch module API testing
 
     Examples: 
       | Sheetname | Testcase          |
-      | Batch     | ExistingBatchName |
+      | Batch     | BatchName |
 
   @BatchGet_005
   Scenario: Verify Get Batches By BatchName for invalid BatchName
@@ -47,7 +47,7 @@ Feature: Batch module API testing
 
     Examples: 
       | Sheetname | Testcase  |
-      | Batch     | ExistingProgramID |
+      | Batch     | ProgramID |
       
   @BatchGet_007
   Scenario: Verify Get Batches for invalid invalidProgramId

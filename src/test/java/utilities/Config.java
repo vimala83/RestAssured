@@ -20,4 +20,8 @@ public class Config {
 	public static final String GETBatch_by_BatchName_URL = "batches/batchName/";
 	
 	public static final String GETBatch_by_ProgramId_URL = "batches/program/";
+	
+	public static final String DeleteBatch_SUB_URL = "batches";
+	
+	public static final String PutBatch_SUB_URL = "batches";
 }

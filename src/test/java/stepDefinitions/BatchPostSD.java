@@ -52,7 +52,7 @@ public class BatchPostSD extends baseclass{
 	
 	@When("User sends HTTPS Request and  request Body with missing fields from {string} and {string} and {string} and {string} and {string} and {string}")
 	public void invalid_data_is_passed_as_request_body(String sheetName, String bName, String bDesc, String bStatus, String bNoC, String bPgId) throws IOException {
-		String batchName = excelDataValue(sheetName, bName);
+		//String batchName = excelDataValue(sheetName, bName);
 		String batchDesc = excelDataValue(sheetName, bDesc);
 		String batchStatus = excelDataValue(sheetName, bStatus);
 		String batchNoC = excelDataValue(sheetName, bNoC);
